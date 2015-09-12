@@ -75,3 +75,5 @@ sitemap.xml.gz*~
 ####################
 _notes
 bower_components
+node_modules
+
