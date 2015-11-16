@@ -1,0 +1,16 @@
+body, .fullpage {
+	height:100%;
+	width:100%;
+	background-color:yellow;
+}
+
+.outer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* add browser-prefixes */
+	.inner {
+		height:50px;
+		background-color:#222;
+	}
+}

@@ -32,6 +32,6 @@
     }
   },
   "config": {
-    "devUrl": "http://visual.local/"
+    "devUrl": "http://playground.local/"
   }
 }
