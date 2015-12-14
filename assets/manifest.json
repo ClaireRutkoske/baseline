@@ -21,6 +21,9 @@
     "jquery.js": {
       "bower": ["jquery"]
     },
+    "d3.js": {
+      "bower": ["d3"]
+    },
     "moment.js": {
       "bower":["moment"]
     },
