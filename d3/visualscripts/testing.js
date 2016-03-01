@@ -8,7 +8,54 @@ d3.select("body")
 	
 	
 	
-// data
+// circles
+
+// (function() {
+//
+// function dance() {
+//   var circle = d3.selectAll("#circle-dance circle"),
+//       span = d3.selectAll(".circle-dance-x"),
+//       data = d3.range(3).map(function() { return Math.random() * 720; });
+//
+//   circle.data(data).attr("cx", function(d) { return d; });
+//   span.data(data).text(function(d) { return d; });
+// }
+//
+// dance();
+// setInterval(dance, 2500);
+//
+// })();
+
+
+
+var circles = d3.select(".circles")
+.attr("width", 720)
+.attr("height", 120);
+
+
+var dancingCircles = function() {
+	
+	var data = d3.range(3).map(function() { return Math.random() * 720; });
+	
+	circles.selectAll("circle")
+	.data(data)
+	.enter().append("circle")
+	.attr("cy", 60)
+	.attr("cx", function(d){ return d; })
+	.attr("r", function(d) { return Math.sqrt(d); });
+	
+	console.log("Run")
+	
+}
+
+dancingCircles();
+setInterval(dancingCircles, 1000);
+
+	
+	
+	
+	
+// test
 
 var dataset = "../../lib/data/data.tsv";
 
@@ -30,7 +77,6 @@ var xAxis = d3.svg.axis()
 var yAxis = d3.svg.axis()
 	.scale(y)
 	.orient("left");
-
 
 
 var chart = d3.select("#test")
@@ -67,7 +113,7 @@ d3.tsv(dataset, type, function (error,data) {
 	.enter().append("text")
 	.attr("text-anchor", "middle")
 	.text(function(d) { return d.value;})
-	.attr("x", function(d, i) { return (i * ((width)/data.length) + (x.rangeBand()/2))  - .1; })
+	.attr("x", function(d, i) { return (i * (860/data.length)) + margin.right; })
 	.attr("y", function(d) { return y(d.value) - 5; })
 	;
 

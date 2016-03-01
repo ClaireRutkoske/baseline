@@ -17,10 +17,13 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+<img src="SellerIcon1.svg" width="500" height="500" />
+
 				<div class="fullpage">
 					<div class="outer">
 						<div class="inner">
 							<p>Vertical Align</p>
+							<img src="BuyerIcon1.svg" width="500" height="500" />
 						</div>
 					</div>			
 				</div>
