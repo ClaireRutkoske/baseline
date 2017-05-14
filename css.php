@@ -9,6 +9,7 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
+
         <link rel="stylesheet" href="dist/styles/main.css">
     </head>
     <body>
@@ -16,10 +17,19 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+<img src="SellerIcon1.svg" width="500" height="500" />
 
-        <script src="dist/scripts/main.js"></script>
+				<div class="fullpage">
+					<div class="outer">
+						<div class="inner">
+							<p>Vertical Align</p>
+							<img src="BuyerIcon1.svg" width="500" height="500" />
+						</div>
+					</div>			
+				</div>
+
+        <script src="dist/scripts/jquery.js"></script>
+		<script src="dist/scripts/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script></script>

@@ -1,0 +1,40 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "scripts/main.js"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    },
+    "beat.css": {
+      "files": [
+        "styles/beat.scss"
+      ],
+       "main": true
+    },
+    "jquery.js": {
+      "bower": ["jquery"]
+    },
+    "d3.js": {
+      "bower": ["d3"]
+    },
+    "moment.js": {
+      "bower":["moment"]
+    },
+    "moment-zone.js": {
+      "bower":["moment-timezone"]
+    },
+    "modernizr.js": {
+      "bower":["modernizr"]
+    }
+  },
+  "config": {
+    "devUrl": "http://playground.local/"
+  }
+}
